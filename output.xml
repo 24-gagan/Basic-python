@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2025-12-24T13:03:12.056478" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Case 1" source="C:\Users\gagan\PycharmProjects\PythonProject\Robot_Framework\test_case_1.robot">
+<kw name="Open Connection And Login" type="SETUP">
+<kw name="Open Connection" owner="SSHLibrary">
+<arg>${HOST}</arg>
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<status status="PASS" start="2025-12-24T13:03:12.489854" elapsed="0.000385"/>
+</kw>
+<kw name="Login" owner="SSHLibrary">
+<msg time="2025-12-24T13:03:12.490751" level="INFO">Logging into '192.168.1.10:22' as 'admin'.</msg>
+<msg time="2025-12-24T13:03:15.514817" level="FAIL">TimeoutError: timed out</msg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<status status="FAIL" start="2025-12-24T13:03:12.490428" elapsed="3.030698">TimeoutError: timed out</status>
+</kw>
+<status status="FAIL" start="2025-12-24T13:03:12.489215" elapsed="3.032301">TimeoutError: timed out</status>
+</kw>
+<test id="s1-t1" name="Execute Home Directory List" line="17">
+<status status="FAIL" start="2025-12-24T13:03:15.521710" elapsed="0.014476">Parent suite setup failed:
+TimeoutError: timed out</status>
+</test>
+<kw name="Close Connection" owner="SSHLibrary" type="TEARDOWN">
+<doc>Closes the current connection.</doc>
+<status status="PASS" start="2025-12-24T13:03:15.567541" elapsed="0.000239"/>
+</kw>
+<status status="FAIL" start="2025-12-24T13:03:12.058490" elapsed="3.509345">Suite setup failed:
+TimeoutError: timed out</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Case 1" id="s1" pass="0" fail="1" skip="0">Test Case 1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
